@@ -79,7 +79,7 @@ for spec_file_prefix in \
     umutil              \
     mc                  \
     saga                \
-    fltk-devel          \
+    xdiskusage          \
     filesystem
 
 do
