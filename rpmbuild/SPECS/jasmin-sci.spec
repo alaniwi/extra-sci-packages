@@ -3,7 +3,7 @@
 
 Summary: Package that installs %scl
 Name: %scl_name
-Version: 1.8
+Version: 2.1
 Release: 1%{?dist}
 BuildArch: noarch
 License: GPLv2+
@@ -102,10 +102,11 @@ Requires: %{scl_prefix}libdrs >= 3.1.2-2
 Requires: %{scl_prefix}libcrayutil >= 20121128-3
 Requires: %{scl_prefix}umutil >= 20130102-5
 Requires: %{scl_prefix}umutil-lib >= 20130102-5
-Requires: %{scl_prefix}filesystem >= 1.1
+Requires: %{scl_prefix}filesystem >= 1.1-5
 Requires: %{scl_prefix}minio >= 20211007.041958-2
-
-
+Requires: %{scl_prefix}saga >= 9.3.2-1
+Requires: %{scl_prefix}xdiskusage >= 1.60-1
+Requires: %{scl_prefix}eccodes2_27 >= 2.27.1-2
 
 %if %{?_with_closed_source:1}%{?!_with_closed_source:0}
 Requires: %{scl_prefix}withgroups >= 1.1-2
