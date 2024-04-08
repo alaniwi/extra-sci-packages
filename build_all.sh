@@ -53,6 +53,7 @@ sudo yum -y install netcdf-devel proj-devel # for mtk
 sudo yum -y install gtk2-devel # for leafpad
 sudo yum -y install hdf-devel ncompress # for hdfeos2 / mtk
 sudo yum -y install fftw-devel cmake # for emos (required by umutil)
+sudo yum -y install wxGTK-devel proj-devel gdal-devel libtiff-devel unixODBC-devel # for saga
 
 # Now build the software packages.  Names on this list are the file
 # stems of the spec files.
@@ -76,6 +77,7 @@ for spec_file_prefix in \
     emos                \
     umutil              \
     mc                  \
+    saga                \
     filesystem
 
 do
