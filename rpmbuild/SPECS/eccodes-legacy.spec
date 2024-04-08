@@ -4,7 +4,7 @@
 %{?scl:%scl_package %{_pname}}
 Name: %{?scl_pkg_name}%{?!scl_pkg_name:%{_pname}}
 Version: 2.27.1
-Release: 1%{?dist}
+Release: 2%{?dist}
 License: Apache
 Group: Scientific support	
 Source0: %{_name}-%{version}-Source.tar.gz
@@ -63,20 +63,25 @@ rm -rf $RPM_BUILD_ROOT
 
 %files				
 %defattr(-,root,root)			
+%dir %{install_dir}/
+%dir %{install_dir}/lib64
 %{install_dir}/lib64/libeccodes*
+%dir %{install_dir}/bin
 %{install_dir}/bin/*
-%{install_dir}/include/eccodes*
-%{install_dir}/include/grib_api*
+%{install_dir}/include
 
 %files devel
-%{install_dir}/lib64/pkgconfig/eccodes*
-%{install_dir}/lib64/cmake/eccodes
+%{install_dir}/lib64/pkgconfig
+%{install_dir}/lib64/cmake
 
 %files data
-%{install_dir}/share/eccodes
+%{install_dir}/share
 
 
 %changelog
+
+* Mon Apr 8 2024 Alan Iwi alan.iwi@stfc.ac.uk 2.27.1-2
+- Tweak RPM file ownership
 
 * Sun Feb 18 2024 Alan Iwi alan.iwi@stfc.ac.uk 
 - Created initial RPM
