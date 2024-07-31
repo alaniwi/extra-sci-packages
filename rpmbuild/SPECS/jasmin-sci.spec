@@ -3,7 +3,7 @@
 
 Summary: Package that installs %scl
 Name: %scl_name
-Version: 2.2
+Version: 2.4
 Release: 3%{?dist}
 BuildArch: noarch
 License: GPLv2+
@@ -35,6 +35,8 @@ Requires: htop
 Requires: ImageMagick-c++-devel
 Requires: ksh
 Requires: less
+# libaec needed for Intel compilers
+Requires: libaec
 Requires: libRmath
 Requires: libRmath-devel
 Requires: libXaw-devel
@@ -45,10 +47,11 @@ Requires: mesa-dri-drivers
 Requires: nano
 Requires: ncview
 Requires: nedit
-Requires: netcdf-cxx
-Requires: netcdf-cxx-devel
-Requires: netcdf-devel
-Requires: netcdf-fortran-devel
+Requires: netcdf
+#Requires: netcdf-cxx
+#Requires: netcdf-cxx-devel
+#Requires: netcdf-devel
+#Requires: netcdf-fortran-devel
 Requires: netpbm-devel
 Requires: octave
 Requires: octave-devel
