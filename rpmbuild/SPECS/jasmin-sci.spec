@@ -3,8 +3,8 @@
 
 Summary: Package that installs %scl
 Name: %scl_name
-Version: 2.1
-Release: 1%{?dist}
+Version: 2.2
+Release: 3%{?dist}
 BuildArch: noarch
 License: GPLv2+
 BuildRequires: scl-utils-build
@@ -15,7 +15,6 @@ Requires: %{scl_prefix}runtime == %{version}-%{release}
 
 # Requires from Rocky / EPEL base (non SCL packages)
 
-Requires: GraphicsMagick-c++
 Requires: atlas
 Requires: atlas-devel
 Requires: ddd
@@ -28,6 +27,7 @@ Requires: gitk
 Requires: glibc-static
 Requires: gnuplot
 Requires: gpsbabel
+Requires: GraphicsMagick-c++
 Requires: grass
 Requires: grass-devel
 Requires: gv
@@ -55,6 +55,7 @@ Requires: octave-devel
 Requires: octave-netcdf
 Requires: openssl-devel
 Requires: p7zip
+Requires: patch
 Requires: perl-Image-ExifTool
 Requires: perl-core
 Requires: perl-devel
@@ -62,6 +63,8 @@ Requires: postgresql-devel
 Requires: proj
 Requires: proj-devel
 Requires: qt5-devel
+Requires: screen
+Requires: singularity-ce
 Requires: sqlite-devel
 Requires: subversion
 Requires: subversion-devel
@@ -70,6 +73,7 @@ Requires: tcl-devel
 Requires: tcsh
 Requires: texlive-dvipng texlive-pdftex texlive-type1cm texlive-latex-bin texlive-cm-super texlive-cm texlive-epstopdf
 Requires: tk-devel
+Requires: tmpwatch
 Requires: tmux
 Requires: tree
 Requires: udunits2-devel
@@ -77,10 +81,12 @@ Requires: uuid
 Requires: uuid-devel
 Requires: vim-enhanced
 Requires: vim-X11
+Requires: wgrib
 Requires: wxGTK-devel
 Requires: xfce4-terminal
 Requires: xorg-x11-util-macros
 Requires: xpdf
+Requires: xterm
 
 # Requires from local JASMIN builds (SCL packages)
 
